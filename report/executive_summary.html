@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="ar">
+<head>
+<meta charset="utf-8">
+<title>Where should the next riyal go?</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --accent: #2a78d6; --accent-tint: rgba(42,120,214,.09); --red: #e34948;
+    --ink: #0b0b0b; --ink-2: #52514e; --muted: #898781; --rule: #e1e0d9; --surface: #fcfcfb;
+  }
+  @page { size: A4; margin: 0; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: #e9e8e3; color: var(--ink); }
+  body { font-family: "IBM Plex Sans Arabic", "IBM Plex Sans", "Segoe UI", Tahoma, sans-serif; font-size: 9.6pt; line-height: 1.5; }
+  .page { width: 210mm; height: 297mm; padding: 13mm 14mm 11mm; margin: 0 auto 8mm; background: var(--surface);
+          position: relative; overflow: hidden; page-break-after: always; break-after: page; }
+  .page:last-child { page-break-after: auto; break-after: auto; }
+  .en { direction: ltr; text-align: left; font-family: "IBM Plex Sans", "Segoe UI", sans-serif; }
+  .ar { direction: rtl; text-align: right; }
+  @media print { body { background: none; } .page { margin: 0; } }
+
+  .kicker { color: var(--accent); font-weight: 600; font-size: 8pt; letter-spacing: .04em; }
+  h1 { font-size: 21pt; line-height: 1.2; margin: 1mm 0 1.5mm; font-weight: 700; }
+  .sub { color: var(--ink-2); font-size: 10pt; margin: 0 0 4mm; }
+  h2 { font-size: 11.5pt; margin: 4mm 0 1.5mm; font-weight: 600; }
+  h2 .n { display: inline-block; min-width: 6mm; padding: 0 1.6mm; margin-inline-end: 2mm; border-radius: 1.2mm;
+          background: var(--accent); color: #fff; text-align: center; font-size: 9.5pt; }
+  p { margin: 0 0 2mm; }
+  b.hl { color: var(--accent); }
+
+  .answer { border-inline-start: 4px solid var(--accent); background: var(--accent-tint); padding: 3mm 4.5mm; border-radius: 2mm;
+            font-size: 10.4pt; line-height: 1.6; }
+  .ar .answer { border-radius: 2mm 0 0 2mm; } .en .answer { border-radius: 0 2mm 2mm 0; }
+  .tiles { display: grid; grid-template-columns: repeat(4, 1fr); gap: 3mm; margin: 4mm 0 1mm; }
+  .tile { background: var(--accent-tint); border-radius: 2mm; padding: 2.4mm 3mm; }
+  .tile .l { font-size: 7.8pt; color: var(--ink-2); }
+  .tile .v { font-size: 16pt; font-weight: 700; line-height: 1.25; direction: ltr; unicode-bidi: isolate; }
+  .ar .tile .v { text-align: right; }
+  .tile .s { font-size: 7.4pt; color: var(--muted); }
+
+  figure { margin: 2mm 0 0; }
+  figure img { width: 100%; display: block; border-radius: 1mm; }
+  figcaption { font-size: 7.6pt; color: var(--muted); margin-top: 1mm; }
+  .two { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm; }
+
+  table { width: 100%; border-collapse: collapse; font-size: 8.1pt; line-height: 1.38; }
+  th { text-align: start; font-weight: 600; color: var(--ink-2); border-bottom: 1px solid #c3c2b7; padding: 1.2mm 1.5mm; }
+  td { border-bottom: 1px solid var(--rule); padding: 1.1mm 1.5mm; vertical-align: top; }
+  td.k { font-weight: 600; color: var(--accent); white-space: nowrap; }
+  td.who { white-space: nowrap; color: var(--ink-2); }
+
+  .box { border: 1px solid var(--rule); border-radius: 2mm; padding: 2.6mm 3.5mm; font-size: 8.1pt; line-height: 1.45; margin-top: 3mm; }
+  .box h3 { margin: 0 0 1mm; font-size: 9pt; }
+  .box ul { margin: 0; padding-inline-start: 4.5mm; }
+  .box li { margin-bottom: .6mm; }
+  .foot { position: absolute; bottom: 6mm; inset-inline: 14mm; font-size: 7.2pt; color: var(--muted);
+          display: flex; justify-content: space-between; border-top: 1px solid var(--rule); padding-top: 1.5mm; }
+  .ltr { direction: ltr; unicode-bidi: isolate; }
+</style>
+</head>
+<body>
+
+<!-- ============================ ARABIC: page 1 ============================ -->
+<section class="page ar">
+  <div class="kicker">هاكاثون تحليل البيانات في القطاع غير الربحي ٢ · ملخص تنفيذي</div>
+  <h1>أين يذهب الريال القادم؟</h1>
+  <p class="sub">أيّ أزواج <b>المنطقة × المجال</b> تستحق الأولوية في المنح ودعم الجمعيات؟ تحليل لكل فرص التبرع في قسم المشاريع على منصة إحسان، فبراير ٢٠٢١ – أكتوبر ٢٠٢٦.</p>
+
+  <div class="answer">
+    <b>الإجابة باختصار:</b> يذهب الريال القادم أولاً إلى <b class="hl">المنطقة الشرقية</b>، التي تضم ٦ من أصل ١٥ زوجاً ذا أولوية، ثم الرياض (٤) ومكة المكرمة (٢) والمدينة المنورة (٢) وجازان (١).
+    في <b>١٢</b> زوجاً يستجيب المتبرعون بسرعة طبيعية لما يُنشر، فالفجوة في <b>قلة ما يُنشر</b> لا في المتبرعين، والأجدى تمويل قدرة الجمعيات على إعداد الفرص ونشرها.
+    وفي <b>٣</b> أزواج فقط يقلّ المنشور ويبطؤ التمويل معاً، فتحتاج منحاً أو تمويلاً مطابقاً: الإطعام والإسكان في الشرقية، والبرامج الدينية في جازان.
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="l">فرص التبرع المحللة</div><div class="v">9,788</div><div class="s">منها 9,737 مكتملة التمويل</div></div>
+    <div class="tile"><div class="l">قيمة الفرص المكتملة</div><div class="v">SAR 1.9B</div><div class="s">في ١٣ منطقة</div></div>
+    <div class="tile"><div class="l">الجمعيات</div><div class="v">1,785</div><div class="s">نشرت فرصة واحدة على الأقل</div></div>
+    <div class="tile"><div class="l">جمعيات الشرقية الشريكة لكل ساكن</div><div class="v">0.43×</div><div class="s">من المعدل الوطني</div></div>
+  </div>
+
+  <figure>
+    <img src="../outputs/figures/6_1_priorities.png" alt="">
+    <figcaption>التغطية = قيمة ما نُشر لكل ساكن مقارنة بالمعدل الوطني للمجال نفسه (١٫٠ = الحصة العادلة). الأحمر: يحتاج منحاً، الأزرق: يحتاج نشراً أكثر. يمين الشكل: نسبة الفرص المموّلة خلال أسبوع مقارنة بالمعدل الوطني.</figcaption>
+  </figure>
+
+  <h2><span class="n">١</span>الفجوة في جانب الجمعيات، لا في جانب المتبرعين</h2>
+  <p>نُشر للشرقية ما قيمته <b>٢٣ ريالاً لكل ساكن</b> مقابل <b>١٩٧ ريالاً</b> للباحة، وهي دون حصتها العادلة في كل المجالات. ومع ذلك تُموَّل معظم فرصها بسرعة قريبة من المعدل الوطني.
+  السبب في عدد الجمعيات: لدى الشرقية <b>٠٫٤٣×</b> من المعدل الوطني من الجمعيات الشريكة لكل ساكن، ولا ينشر مشاريع منها إلا <b>٠٫٧٥×</b> من النسبة الوطنية، مع أن من ينشر منها أنشط من المتوسط (<b>١٫٢٣×</b>). والرياض كذلك قليلة الجمعيات (<b>٠٫٥١×</b>)، وتبوك تنشر فرصاً أصغر (<b>٠٫٨٢×</b>).</p>
+
+  <div class="foot"><span>أين يذهب الريال القادم؟ · ملخص تنفيذي</span><span class="ltr">1 / 4</span></div>
+</section>
+
+<!-- ============================ ARABIC: page 2 ============================ -->
+<section class="page ar">
+  <div class="two">
+    <div>
+      <h2 style="margin-top:0"><span class="n">٢</span>التوقيت يغيّر سرعة التمويل</h2>
+      <p><b>شعبان</b> أبطأ شهر في التمويل، دون متوسط سنته في <b>٥ من ٥</b> سنوات (−١٤ نقطة)، و٤٠٪ من فرصه لا تكتمل إلا في رمضان. أما <b>رمضان</b> فأسرع من متوسط سنته (+٧ نقاط) رغم أنه يستقبل ٤ أضعاف المنشور.
+      ويبلغ العطاء ذروته يوم <b>٢٧</b> (يوم الرواتب، ١٫٦× يوم عادي) ويوم <b>الجمعة</b> (١٫٥×).</p>
+      <figure><img src="../outputs/figures/4_2_speed_by_month.png" alt=""></figure>
+    </div>
+    <div>
+      <h2 style="margin-top:0"><span class="n">٣</span>ما الذي يستجيب له المتبرعون؟</h2>
+      <p>بُني نموذج يقدّر، يوم النشر، احتمال أن يتأخر التمويل أكثر من أسبوع؛ والغرض فهم سلوك المتبرعين لا تشغيله على المنصة. أقوى العوامل <b>المبلغ</b> و<b>ازدحام النشر</b>: الأسابيع المزدحمة (رمضان خاصة) أسرع لا أبطأ. أما <b>المنطقة فلا تضيف شيئاً</b>، فالمتبرعون لا يفرّقون بين المناطق. والنموذج متواضع بصدق (AUC ٠٫٧٠): معظم البطء لا يظهر يوم النشر.</p>
+      <figure><img src="../outputs/figures/5_2_drivers.png" alt=""></figure>
+    </div>
+  </div>
+
+  <h2><span class="n">٤</span>التوصيات</h2>
+  <table>
+    <tr><th>#</th><th>من ينفّذ</th><th>ماذا يُفعل</th><th>الدليل</th></tr>
+    <tr><td class="k">١</td><td class="who">المانحون، المركز الوطني</td><td>منح أو تمويل مطابق للأزواج الثلاثة المهملة: الإطعام والإسكان في الشرقية، والبرامج الدينية في جازان</td><td>الإسكان في الشرقية: ٣٧٪ يُموَّل خلال أسبوع مقابل ٥٨٪ وطنياً</td></tr>
+    <tr><td class="k">٢</td><td class="who">المانحون، المركز الوطني</td><td>في أزواج فجوة النشر الـ١٢: تمويل قدرة الجمعيات على إعداد الفرص ونشرها، لا التبرعات</td><td>المتبرعون يموّلون ما يُنشر هناك بسرعة طبيعية أو أسرع</td></tr>
+    <tr><td class="k">٣</td><td class="who">المركز الوطني مع إحسان</td><td>الشرقية والرياض: ضمّ جمعيات محلية أكثر إلى المنصة، ومساعدة جمعيات الشرقية على نشر أول مشاريعها</td><td>الجمعيات لكل ساكن: ٠٫٤٣× و٠٫٥١×</td></tr>
+    <tr><td class="k">٤</td><td class="who">المركز الوطني مع إحسان</td><td>تبوك: دمج الاحتياجات المتقاربة في فرص أكبر</td><td>متوسط حجم الفرصة ٠٫٨٢×</td></tr>
+    <tr><td class="k">٥</td><td class="who">المركز الوطني مع إحسان</td><td>متابعة الجمعيات بعد أول مشروع لدعم مشروع ثانٍ</td><td>٣٥٪ من الجمعيات أكملت مشروعاً واحداً فقط</td></tr>
+    <tr><td class="k">٦</td><td class="who">الجمعيات</td><td>عدم الاعتماد على شعبان للاحتياجات العاجلة؛ نشرها في رمضان أو طلب تمويل مطابق</td><td>شعبان دون سنته في ٥ من ٥ سنوات</td></tr>
+    <tr><td class="k">٧</td><td class="who">الجمعيات</td><td>إرسال النداءات والتذكير حول يوم ٢٧ ويوم الجمعة</td><td>١٫٦× و١٫٥× من الاكتمالات في يوم عادي</td></tr>
+    <tr><td class="k">٨</td><td class="who">الجمعيات</td><td>تقسيم المبالغ الكبيرة جداً إلى مراحل حين تسمح طبيعة الاحتياج</td><td>أكبر خُمس: ٣٥٪ بطيء مقابل ٢٩٪</td></tr>
+    <tr><td class="k">٩</td><td class="who">الجمعيات</td><td>عدم تأجيل النشر تجنباً للأسابيع المزدحمة</td><td>المزدحمة: ٢٥٪ بطيء مقابل ٣٢٪</td></tr>
+    <tr><td class="k">١٠</td><td class="who">المانحون، المركز الوطني</td><td>دعم الجمعيات ذات السجل البطيء في كتابة نداءاتها والترويج لها</td><td>٤٧٪ بطيء مقابل ٢٧٪ لبقية الجمعيات</td></tr>
+  </table>
+
+  <div class="box">
+    <h3>المنهجية والاستخدام المسؤول للذكاء الاصطناعي</h3>
+    <ul>
+      <li><b>البيانات:</b> صفحات إحسان العامة (بتأنٍّ: ١٫٥ ثانية بين الطلبات، دون إعادة تحميل)، وتعداد ٢٠٢٢ من الهيئة العامة للإحصاء، وعدد الجمعيات الشريكة من لوحة إحصاءات إحسان. <b>لا بيانات شخصية</b>: حُذفت عناوين الحالات الفردية عند الجمع، والتحليل مجمّع.</li>
+      <li><b>التنظيف موثّق:</b> كل خطوة في سجل التنظيف وقاموس البيانات؛ استُكملت المنطقة لـ١٬٨٢٣ فرصة (٣ فقط بقيت مجهولة)، واستُبعدت أشهر الإطلاق الأولى من مقارنات السرعة.</li>
+      <li><b>اختبار عادل للنموذج:</b> تدريب على الماضي واختبار على آخر ١٥ شهراً. التقسيم العشوائي كان سيعطي ٠٫٨٢ مضللة. ورُفضت نتيجتان مغريتان: إشارة ناتجة عن تغيّر تصميم صفحات التقارير، ونموذج أكبر تفوّق في الاختبار فقط.</li>
+      <li><b>الحدود:</b> البيانات لمشاريع إحسان فقط، والأنماط ليست سبباً مثبتاً. استخدام الذكاء الاصطناعي موثّق في <span class="ltr">ai_usage_log.md</span>.</li>
+    </ul>
+  </div>
+
+  <div class="foot"><span class="ltr">Notebook (Colab): colab.research.google.com/github/noorge/next-riyal/blob/main/analysis.ipynb · Code: github.com/noorge/next-riyal</span><span class="ltr">2 / 4</span></div>
+</section>
+
+<!-- ============================ ENGLISH: page 3 ============================ -->
+<section class="page en" lang="en">
+  <div class="kicker">NONPROFIT DATA ANALYSIS HACKATHON 2 · EXECUTIVE SUMMARY</div>
+  <h1>Where should the next riyal go?</h1>
+  <p class="sub">Which <b>region × cause</b> pairs should come first for grants and support to associations? An analysis of every donation opportunity in the Projects area of Ehsan, Saudi Arabia's national giving platform, February 2021 – October 2026.</p>
+
+  <div class="answer">
+    <b>The answer in brief:</b> the next riyal should go first to the <b class="hl">Eastern Region</b>, which holds 6 of the 15 priority pairs, then Riyadh (4), Makkah (2), Madinah (2) and Jazan (1).
+    In <b>12</b> pairs donors fund what is posted at a normal pace, so the gap is <b>how little is posted</b>, not donors; the best use of money is associations' capacity to prepare and post opportunities.
+    Only <b>3</b> pairs are both under-posted and slow to fund, and need grants or matching funds: Eastern feeding, Eastern housing and Jazan religious programmes.
+  </div>
+
+  <div class="tiles">
+    <div class="tile"><div class="l">Opportunities analysed</div><div class="v">9,788</div><div class="s">9,737 fully funded</div></div>
+    <div class="tile"><div class="l">Raised by completed ones</div><div class="v">SAR 1.9B</div><div class="s">across 13 regions</div></div>
+    <div class="tile"><div class="l">Associations</div><div class="v">1,785</div><div class="s">posted at least once</div></div>
+    <div class="tile"><div class="l">Eastern partner associations per resident</div><div class="v">0.43×</div><div class="s">the national level</div></div>
+  </div>
+
+  <figure>
+    <img src="../outputs/figures/6_1_priorities.png" alt="">
+    <figcaption>Coverage = value posted per resident against the national rate for the same cause (1.0 = fair share). Red: needs grants; blue: needs more posted. Right: share funded within a week against the national share.</figcaption>
+  </figure>
+
+  <h2><span class="n">1</span>The gap is on the association side, not the donor side</h2>
+  <p>Projects worth <b>SAR 23 per resident</b> were posted for the Eastern Region, against <b>SAR 197</b> for Al-Bahah; Eastern is below its fair share in every cause. Yet most of its opportunities fund at close to the national pace.
+  The difference is in associations: Eastern has <b>0.43×</b> the national number of partner associations per resident, and only <b>0.75×</b> the national share of them post projects, although those that post are more active than average (<b>1.23×</b>). Riyadh also has few associations (<b>0.51×</b>), and Tabuk posts smaller opportunities (<b>0.82×</b>).</p>
+
+  <div class="foot"><span>Where should the next riyal go? · Executive summary</span><span>3 / 4</span></div>
+</section>
+
+<!-- ============================ ENGLISH: page 4 ============================ -->
+<section class="page en" lang="en">
+  <div class="two">
+    <div>
+      <h2 style="margin-top:0"><span class="n">2</span>Timing changes how fast donors fund</h2>
+      <p><b>Sha'ban</b> is the slowest month to fund, below its year's average in <b>5 of 5</b> years (−14 points), and 40% of its opportunities complete only in Ramadan. <b>Ramadan</b> funds faster than its year (+7 points) despite 4× the postings.
+      Giving peaks on the <b>27th</b> (salary day, 1.6× an average day) and on <b>Fridays</b> (1.5×).</p>
+      <figure><img src="../outputs/figures/4_2_speed_by_month.png" alt=""></figure>
+    </div>
+    <div>
+      <h2 style="margin-top:0"><span class="n">3</span>What donors respond to</h2>
+      <p>A model estimates, on the day of posting, the chance that funding takes more than a week; its purpose is to understand donors, not to be run by a platform. The strongest features are <b>amount</b> and <b>competition</b>: busy weeks (above all Ramadan) fund faster, not slower. <b>Region adds nothing</b>: donors do not treat regions differently. The model is honestly modest (AUC 0.70): most slowness is not visible on posting day.</p>
+      <figure><img src="../outputs/figures/5_2_drivers.png" alt=""></figure>
+    </div>
+  </div>
+
+  <h2><span class="n">4</span>Recommendations</h2>
+  <table>
+    <tr><th>#</th><th>Who acts</th><th>What to do</th><th>Evidence</th></tr>
+    <tr><td class="k">1</td><td class="who">Funders, NCNP</td><td>Grants or matching funds for the 3 neglected pairs: Eastern feeding, Eastern housing, Jazan religious</td><td>Eastern housing: 37% funded within a week vs 58% nationally</td></tr>
+    <tr><td class="k">2</td><td class="who">Funders, NCNP</td><td>For the 12 supply gaps, fund associations' capacity to prepare and post opportunities, not donations</td><td>Donors fund what is posted there at a normal pace or faster</td></tr>
+    <tr><td class="k">3</td><td class="who">NCNP, with Ehsan</td><td>Eastern and Riyadh: bring more local associations onto Ehsan; help Eastern associations post their first projects</td><td>Associations per resident: 0.43× and 0.51×</td></tr>
+    <tr><td class="k">4</td><td class="who">NCNP, with Ehsan</td><td>Tabuk: combine related needs into larger opportunities</td><td>Average size 0.82×</td></tr>
+    <tr><td class="k">5</td><td class="who">NCNP, with Ehsan</td><td>Follow up with associations after a first project, to support a second</td><td>35% completed only one</td></tr>
+    <tr><td class="k">6</td><td class="who">Associations</td><td>Do not rely on Sha'ban for urgent needs; post in Ramadan or seek matching funds</td><td>Sha'ban below its year in 5 of 5 years</td></tr>
+    <tr><td class="k">7</td><td class="who">Associations</td><td>Send appeals and reminders around the 27th and on Fridays</td><td>1.6× and 1.5× an average day's completions</td></tr>
+    <tr><td class="k">8</td><td class="who">Associations</td><td>Where a need allows it, split very large amounts into phases</td><td>Largest fifth: 35% slow vs 29%</td></tr>
+    <tr><td class="k">9</td><td class="who">Associations</td><td>Do not hold back postings to avoid busy weeks</td><td>Busy weeks: 25% slow vs 32%</td></tr>
+    <tr><td class="k">10</td><td class="who">Funders, NCNP</td><td>Help associations with a slow track record write and promote their appeals</td><td>47% slow vs 27% for other associations</td></tr>
+  </table>
+
+  <div class="box">
+    <h3>Method and responsible use of AI</h3>
+    <ul>
+      <li><b>Data:</b> Ehsan's public pages (collected politely: 1.5 s between requests, every page cached), the GASTAT 2022 census, and partner-association counts from Ehsan's statistics page. <b>No personal data</b>: titles of individual cases were dropped at collection; all analysis is aggregated. NCNP: National Center for Non-Profit Sector.</li>
+      <li><b>Documented cleaning:</b> every step is in a cleaning log and data dictionary; region was filled for 1,823 opportunities (3 remain unknown), and Ehsan's first months were left out of speed comparisons.</li>
+      <li><b>Fair model testing:</b> trained on the past, tested on the latest 15 months. A random split would have shown a misleading 0.82. Two tempting results were rejected: a signal caused by a change in report-page layout, and a bigger model that won only on the test.</li>
+      <li><b>Limits:</b> Ehsan project opportunities only; patterns, not proven causes. AI use is documented in <code>ai_usage_log.md</code>.</li>
+    </ul>
+  </div>
+
+  <div class="foot"><span>Notebook (Colab): colab.research.google.com/github/noorge/next-riyal/blob/main/analysis.ipynb · Code: github.com/noorge/next-riyal</span><span>4 / 4</span></div>
+</section>
+
+</body>
+</html>

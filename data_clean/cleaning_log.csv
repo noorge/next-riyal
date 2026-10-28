@@ -1,0 +1,14 @@
+﻿step,rows_affected,note
+merge city spellings,18,3 cities had more than one spelling
+check association spellings,0,"1,785 associations, 0 with more than one spelling"
+fill region from city,1804,"lookup of 490 cities, no conflicts"
+fill region from association,11,association's other opportunities all in one region
+fill region by hand,8,validation/manual_regions.csv
+region still unknown,3,"no city and no association on the page; kept, excluded from regional figures"
+amount unknown,3,"report page returned a server error; kept, excluded from money totals"
+impossible dates,33,completed before published; days_to_fund left empty
+launch period,792,"published before 1 Aug 2021; kept, left out of speed comparisons"
+cause from title,7425,labels.py rules; 'Other' when no rule matches
+possible duplicates,6,"3 identical pairs; kept, each copy was funded separately"
+rule: beneficiaries above zero,2,set to empty
+rule: open projects: collected no more than the target,5,kept; amount uses the target

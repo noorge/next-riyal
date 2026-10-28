@@ -1,0 +1,12 @@
+# raw HTML cache from the scraper (about 2 GB, and some pages describe individual cases)
+data_raw/*/html/
+data_raw/*/*.log
+# raw Ehsan pages used as parser fixtures; some describe individual families and children
+tests/fixtures/
+# working notes and the organisers' brief
+CLAUDE.md
+docs/
+*.pdf
+!report/executive_summary.pdf
+__pycache__/
+.ipynb_checkpoints/
