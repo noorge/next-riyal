@@ -36,7 +36,7 @@ The notebook reads only the small files below and rebuilds everything else (clea
 | `validation/` | Hand checks: regions filled by hand, a random sample of cause labels |
 | `data_clean/` | Clean table, data dictionary and cleaning log (written by the notebook) |
 | `outputs/` | Figures and result tables (written by the notebook) |
-| `report/` | Executive summary (PDF and its HTML source) |
+| `report/` | Executive summary (PDF and its HTML source). `python report/charts_ar.py` redraws its Arabic charts into `outputs/figures/ar/` (Tajawal font in `report/fonts/`, OFL licence) |
 | `scraper/`, `tests/` | The data collector and its parser tests |
 
 ## Privacy

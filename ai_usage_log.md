@@ -78,3 +78,8 @@ Tools: Claude (claude.ai chat), then Claude Code in VS Code.
 - **Asked:** a recommendations section drawing on sections 2–5.
   **Produced:** a table of ten recommendations, each with who acts, the evidence (computed in the notebook, with the section number) and how to tell a year later whether it worked; a closing chart of the 15 priority region × cause pairs; a short list of caveats.
   **Changed by the participant:** the first draft also recommended that Ehsan run the model as a watch list and publish cleaner data. The participant removed both: the model was built to understand how donors respond, not as a tool for the platform. The model recommendations were rewritten as lessons about donors for associations and funders, and section 5 was reframed the same way (5.4 now asks how much of slow funding can be seen in advance; 5.6 lists the limits of what the model shows).
+
+## 2026-10-28: executive summary (Claude Code)
+
+- **The participant wrote** the executive summary in Arabic: the structure, the wording and the choice of what to explain to the reader.
+  **Claude** translated it into English, laid out both versions as `report/executive_summary.pdf`, and redrew the three report charts in Arabic (`report/charts_ar.py`, from the notebook's own numbers).
